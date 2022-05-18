@@ -1,0 +1,1314 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+}
+
+.contenedor {
+    display: grid;
+    height: 100vh;
+
+    /* una propiedad super poderosa que se llama grid-areas*/
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 2fr 1fr 0.5fr 2fr 2fr 0.5fr;
+    grid-template-areas: "banner"
+        "nav"
+        "main"
+        "section"
+        "section2"
+        "section3"
+        "section4"
+        "footer";
+
+    row-gap: 4px;
+
+
+}
+
+header {
+    background-color: #1f3629;
+    grid-area: banner;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    border: #1f3629 solid;
+}
+
+
+nav {
+    background-color: black;
+    grid-area: nav;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    padding-left: 20%;
+    margin: 0.2%;
+    border: 1px whitesmoke solid;
+
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(209, 205, 205);
+    font-size: 1.5rem;
+    text-align: center;
+
+
+
+}
+
+nav ul li {
+
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    list-style-type: none;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    color: rgb(80, 95, 82);
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+nav ul li:hover {
+    background-color: rgb(104, 101, 101);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-11 {
+    background-color: #1f3629;
+    grid-area: main;
+}
+
+.main-11 h1 {
+    font-family: 'Jost', sans-serif;
+    color: rgb(212, 199, 81);
+    text-align: center;
+    font-size: 1.5rem; 
+    font-weight: 800;
+    margin: 5px;
+    padding: 5px;
+    animation-name: animate__animated animate__fadeInLeftBig;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+
+}
+   
+
+.section1 {
+    background-color: #1f3629;
+    grid-area: section;
+}
+
+.section1 img {
+    width: 100%;
+    float: right;
+}
+
+.section2 {
+    background-color: #1f3629;
+    grid-area: section2;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+
+}
+
+.p-1 {
+    text-align: center;
+    padding-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.p-2 {
+    text-align: center;
+    margin: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.p-3 {
+    text-align: center;
+    margin: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section3 {
+    font-size: large;
+    background-color: #1f3629;
+    grid-area: section3;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+
+}
+
+.p1 {
+    text-align: center;
+    padding-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.p2 {
+    text-align: center;
+    padding-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+}
+
+
+
+.section4 {
+    background-color: #1f3629;
+    grid-area: section4;
+}
+
+.section4 img {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+footer {
+    font-family: 'Jost', sans-serif;
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgb(0, 0, 0) 5px 5px 8px 12px;
+    margin-top: 5px;
+    font-weight: 800;
+
+}
+
+#lula {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*procesos del café*/
+
+
+
+.Contenedor_dos {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "uno"
+        "nav-1"
+        "titulo-1"
+        "planta"
+        "planta-p"
+        "granos"
+        "granos-p"
+        "secado"
+        "secado-p"
+        "tostado"
+        "tostado-p"
+        "blends"
+        "blends-p"
+        "extraccion"
+        "extraccion-p"
+        "leche"
+        "leche-p"
+        "footer-1";
+    row-gap: 0.8%;
+
+}
+
+.uno {
+    background-color: #1f3629;
+    grid-area: uno;
+    display: none;
+
+}
+
+.uno img {
+    width: 100%;
+    height: 100%;
+}
+
+.dos {
+
+    background-color: black;
+    grid-area: nav-1;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    padding-left: 20px;
+    margin: 0.2%;
+    
+
+
+}
+
+.dos nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.dos nav ul li {
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    list-style-type: none;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    color: rgb(80, 95, 82);
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.dos nav ul li:hover {
+    background-color: rgba(157, 177, 159, 0.726);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tres {
+    background-color: #1f3629;
+    grid-area: titulo-1;
+}
+
+.tres h1 {
+    padding-left: 3%;
+    margin: 1px;
+    color: whitesmoke;
+    font-family: 'Jost', sans-serif;
+    ;
+    text-align: center;
+
+}
+
+
+.cuatro {
+    background-color: #1f3629;
+    grid-area: planta;
+
+}
+
+.cuatro img {
+    width: 100%;
+    padding: 5%;
+}
+
+.cuatro-p {
+    background-color: #1f3629;
+    grid-area: planta-p;
+}
+
+.cuatro-p p {
+    padding-top: 5%;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    padding: 5%;
+}
+
+.cinco {
+    background-color: #1f3629;
+    grid-area: granos;
+}
+
+.cinco img {
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+}
+
+.cinco-p {
+    background-color: #1f3629;
+    grid-area: granos-p;
+
+}
+
+.cinco-p p {
+    padding: 5%;
+    padding-bottom: 1px;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+}
+
+.seis {
+    background-color: #1f3629;
+    grid-area: secado;
+}
+
+.seis img {
+    padding: 5%;
+    margin-top: 7%;
+    width: 100%;
+    height: 100%;
+}
+
+.seis-p {
+    background-color: #1f3629;
+    grid-area: secado-p;
+
+}
+
+.titulo-6p {
+    margin: 30px 1px 1px 10px;
+    padding-top: 5%;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+
+}
+
+.titulo-6p2 {
+    padding: 2%;
+    padding-bottom: 1px;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+}
+
+.siete {
+    background-color: #1f3629;
+    grid-area: tostado;
+}
+
+.siete img {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+
+
+}
+
+.siete-p {
+    background-color: #1f3629;
+    grid-area: tostado-p;
+
+}
+
+.siete-p p {
+    padding: 5%;
+    padding-bottom: 1px;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+}
+
+.ocho {
+    background-color: #1f3629;
+    grid-area: blends;
+
+}
+
+.ocho img {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+.ocho-p {
+    background-color: #1f3629;
+    grid-area: blends-p;
+
+
+}
+
+.ocho-p p {
+    padding: 5%;
+    padding-bottom: 1px;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+}
+
+.nueve {
+    background-color: #1f3629;
+    grid-area: extraccion;
+
+}
+
+.nueve img {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+
+.nueve-p {
+
+    background-color: #1f3629;
+    grid-area: extraccion-p;
+}
+
+.nueve-p p {
+    padding: 5%;
+    padding-bottom: 1px;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+}
+
+
+.diez {
+    background-color: #1f3629;
+    grid-area: leche;
+
+}
+
+.diez img {
+    width: 100%;
+    height: 80%;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+.diez-p {
+    background-color: #1f3629;
+    grid-area: leche-p;
+}
+
+.diez-p p {
+    padding: 5%;
+    padding-bottom: 1px;
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+}
+
+.once {
+    background-color: black;
+    grid-area: footer-1;
+}
+
+/*recetas de café*/
+
+
+.Contenedor_recetas {
+    display: grid;
+    height: 100vh;
+
+    grid-template-rows: 3fr 0.5fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "banner-receta"
+        "nav-receta"
+        "main-receta"
+        "flatwhite"
+        "latte"
+        "americano"
+        "cappu"
+        "expresso-m"
+        "lungo"
+        "doble"
+        "expresso"
+        "ristretto"
+        "cafe"
+        "pie-receta";
+
+}
+
+.cont-1 {
+    background-color: #1f3629;
+    grid-area: banner-receta;
+    display: none;
+}
+
+.cont-1 img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.cont-2 {
+    background-color: black;
+    grid-area: nav-receta;
+
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    padding-left: 20px;
+    margin: 0.2%;
+    border-style: solid;
+
+}
+
+.cont-2 nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cont-2 nav ul li {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    color: rgb(80, 95, 82);
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.cont-2 nav ul li:hover {
+    background-color: rgba(157, 177, 159, 0.726);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+.cont-3 {
+    background-color: peru;
+    grid-area: main-receta;
+    display: none;
+
+}
+
+.cont-3 h1 {
+    padding-left: 3%;
+    margin: 1px;
+    text-align: center;
+    text-decoration: underline 1px;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+.cont-4 {
+    background-color: peru;
+    grid-area: flatwhite;
+}
+
+.cont-4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-4 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-5 {
+    background-color: peru;
+    grid-area: latte;
+}
+
+.cont-5 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-5 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-6 {
+    background-color: peru;
+    grid-area: americano;
+}
+
+.cont-6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-6 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-7 {
+    background-color: peru;
+    grid-area: cappu;
+}
+
+.cont-7 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-7 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-8 {
+    background-color: peru;
+    grid-area: expresso-m;
+}
+
+.cont-8 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-8 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-9 {
+    background-color: peru;
+    grid-area: lungo;
+}
+
+.cont-9 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-9 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-10 {
+    background-color: peru;
+    grid-area: doble;
+}
+
+.cont-10 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-10 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-11 {
+    background-color: peru;
+    grid-area: expresso;
+}
+
+.cont-11 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-11 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-12 {
+    background-color: peru;
+    grid-area: ristretto;
+}
+
+.cont-12 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-12 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-13 {
+    background-color: peru;
+    grid-area: cafe;
+}
+
+.cont-13 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-13 p {
+    padding: 5%;
+    margin: 1%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.cont-14 {
+    background-color: peru;
+    grid-area: pie-receta;
+
+}
+
+.cont-14 footer {
+    font-family: 'Jost', sans-serif;
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgb(0, 0, 0) 5px 5px 8px 12px;
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+/*ARTE LATTE*/
+
+.Contenedor_artelatte {
+    display: grid;
+    height: 100vh;
+
+    grid-template-rows: 3fr 0.5fr 0.5fr 4fr 3fr 1fr 0.5fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "artebanner"
+        "artenav"
+        "artetitulo"
+        "artevideo"
+        "arteimagen"
+        "artetexto"
+        "artefooter";
+
+}
+
+.contarte1 {
+    background-color: rgb(0, 0, 0);
+    grid-area: artebanner;
+    display: none;
+}
+
+.cont-arte2 {
+    background-color: rgb(0, 0, 0);
+    grid-area: artenav;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    padding-left: 20px;
+    margin: 0.2%;
+    border-style: solid;
+
+}
+
+.cont-arte2 nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cont-arte2 nav ul li {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    color: rgb(80, 95, 82);
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.cont-arte2 nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.726);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.cont-arte3 {
+    background-color: rgb(255, 255, 255);
+    grid-area: artetitulo;
+}
+
+.cont-arte3 h1 {
+    padding-left: 3%;
+    margin: 1px;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+
+
+.cont-arte4 {
+    background-color: rgb(210, 211, 216);
+    grid-area: artevideo;
+}
+
+.cont-arte4 iframe {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.cont-arte5 {
+    background-color: rgb(212, 213, 218);
+    grid-area: arteimagen;
+    display: none;
+}
+
+.cont-arte5 img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.cont-arte6 {
+    background-color: peru;
+    grid-area: artetexto;
+}
+
+.cont-arte6 p {
+    padding: 2%;
+    margin: 3%;
+    font-size: medium;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+
+.artefooter {
+    grid-area: artefooter;
+    font-family: 'Jost', sans-serif;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgb(0, 0, 0) 5px 5px 8px 12px;
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+
+/*contacto*/
+
+.Contenedor_Contacto {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 1fr 2fr 2fr 0.5fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "contacto--nav"
+        "contacto-main"
+        "notebook-img"
+        "input-contacto"
+        "footer_contacto";
+
+}
+
+
+.contacto_img {
+    background-color: rgb(0, 0, 0);
+    grid-area: contacto-logo;
+    display: none;
+
+}
+
+
+.contacto_img header img {
+    background-color: pink;
+}
+
+.contacto__nav {
+    background-color: rgb(0, 0, 0);
+    grid-area: contacto--nav;
+    font-family: 'Jost', sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    padding-left: 10px;
+    border: rgb(224, 224, 224) solid;
+
+
+}
+
+.contacto_nav nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contacto_nav nav ul li {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    color: rgb(80, 95, 82);
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.contacto_nav nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.726);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.contacto_main {
+    grid-area: contacto-main;
+    background-color: #050505;
+
+
+}
+
+.contacto_main h1 {
+    color: black;
+    background-color: tan;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: -35px;
+
+}
+
+.contacto_main h2 {
+    background-color: pink;
+    margin-top: 10%;
+    font-size: 0.5fr;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.contacto_img_notebook {
+    grid-area: notebook-img;
+    background-color: tan;
+}
+
+.contacto_img_notebook img {
+    width: 100vw;
+    height: 70vh;
+    padding: 10px;
+
+}
+
+.input_contacto {
+    background-color: tan;
+    grid-area: input-contacto;
+    list-style-type: none;
+
+
+
+}
+
+.input_contacto label {
+    text-align: center;
+    display: list-item;
+    margin: 2%;
+
+
+}
+
+.input_contacto textarea {
+    text-align: start;
+    text-align: center;
+    margin-left: 5%;
+
+}
+
+.enviar {
+    padding-left: 70%;
+    margin-bottom: 9%;
+}
+
+
+.footer_cont footer p {
+    font-family: 'Jost', sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-size: 1fr;
+    background-color: rgb(0, 0, 0);
+    grid-area: footer_contacto;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 2px;
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .dos {
+
+        text-align: justify;
+
+
+    }
+
+    nav {
+
+        padding-left: 35%;
+        padding-right: 20%;
+
+    }
+
+    .contacto_main h1 {
+        margin-bottom: -50px;
+
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .uno {
+        display: inline-block;
+    }
+
+    .Contenedor_dos {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas: "uno uno"
+            "nav-1 nav-1"
+            "titulo-1 titulo-1"
+            "planta planta-p"
+            "granos granos-p"
+            "secado secado-p"
+            "tostado tostado-p"
+            "blends blends-p"
+            "extraccion extraccion-p"
+            "leche leche-p"
+            "footer-1 footer-1";
+    }
+
+    .dos{
+        padding: 1px;
+    }
+    .dos nav ul li {
+        width: 195px;
+        height: 35px;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas: "banner banner"
+            "nav nav"
+            "main main"
+            "section section2"
+            "section3 section4"
+            "footer footer";
+    }
+
+    nav {
+        padding: 1px;
+
+
+    }
+
+    nav ul li {
+        height: 30px;
+        width: 195px;
+
+    }
+
+    .Contenedor_recetas {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "banner-receta banner-receta"
+            "nav-receta nav-receta"
+            "main-receta main-receta"
+            "flatwhite latte"
+            "americano cappu"
+            "expresso-m lungo"
+            "doble expresso"
+            "ristretto cafe"
+            "pie-receta pie-receta";
+        gap: 1%;
+    }
+
+    .cont-1 {
+        display: inline-block
+    }
+    .cont-2{
+        padding: 1px;
+    }
+    .cont-2 nav ul li {
+        flex-direction: row;
+        height: 30px;
+        width: 195px;
+    }
+
+    .cont-3 {
+        display: inline-block;
+    }
+
+    .Contenedor_artelatte {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "artebanner artebanner"
+            "artenav artenav"
+            "artetitulo artetitulo"
+            "artevideo artevideo"
+            "arteimagen artetexto"
+            "artefooter artefooter";
+
+    }
+
+    .contarte1 {
+        display: inline-block;
+    }
+
+    .cont-arte2 nav ul li {
+        height: 30px;
+        width: 190px;
+
+    }
+
+    .cont-arte4 iframe {
+        padding-right: 3vh;
+        padding-left: 3vh;
+        border: 20px black solid;
+
+    }
+
+    .cont-arte5 {
+        display: flex;
+
+        justify-content: center;
+
+
+    }
+
+    .cont-arte6 {
+        padding: 3vh 3vh 3vh 3vh;
+        padding-top: 20%;
+        border: 10px solid;
+    }
+
+    .Contenedor_Contacto {
+
+        grid-template-rows: 2fr 0.3fr 2fr 2fr 0.8fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "contacto-logo contacto-logo"
+            "contacto--nav contacto--nav"
+            "contacto-main contacto-main"
+            "notebook-img input-contacto"
+            "footer_contacto footer_contacto";
+
+    }
+
+    .contacto_img {
+        display: inline-block;
+    }
+
+    .contacto__nav {
+        display: inline-block;
+        height: 50px;
+
+
+    }
+
+
+    .contacto__nav nav ul li {
+        height: 30px;
+        width: 180px;
+
+    }
+    .contacto_main h1 {
+        margin-bottom: 15px;
+    }
+
+    .contacto_main h2 {
+        margin: -1px;
+    }
+
+    .input_contacto {
+
+    padding-top: 20%;
+      
+    }
+    .input_contacto form {
+        background-color: pink;
+        
+      
+    }
+            
+    .contacto_img_notebook img {
+        background-color: tan;
+        width: 60vw;
+        height: 70vh;
+        padding: 10px;
+        
+    
+    }
+    
+    }
