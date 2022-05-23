@@ -8,7 +8,7 @@ body {
     background-color: #050505;
 }
 
-.contenedor {
+.contenedor-index {
     display: grid;
     height: 100vh;
 
@@ -30,46 +30,40 @@ body {
 
 }
 
-header {
+.index-1 {
     background-color: #1f3629;
     grid-area: banner;
 }
 
-header img {
+.index-1 img {
     width: 100%;
     height: 100%;
     border: #1f3629 solid;
 }
 
 
-nav {
+.index-2 {
     background-color: black;
     grid-area: nav;
     font-family: 'Jost', sans-serif;
     font-weight: 800;
     display: inline-block;
     position: relative;
-    justify-content: center;
-    padding-left: 20%;
-    margin: 0.2%;
-    border: 1px whitesmoke solid;
+    padding-left: 25% ;
+    margin: 0.2%;   
 
 
 }
 
-
-nav ul li a {
+.index-2 ul li a {
     text-decoration: none;
-    color: rgb(209, 205, 205);
+    color: whitesmoke;
     font-size: 1.5rem;
     text-align: center;
-
-
-
 }
 
-nav ul li {
 
+.index-2 ul li {
     width: 200px;
     height: 35px;
     text-align: center;
@@ -80,12 +74,13 @@ nav ul li {
     color: rgb(80, 95, 82);
     flex-direction: column;
     justify-content: center;
+
 }
 
 
-nav ul li:hover {
-    background-color: rgb(104, 101, 101);
-    font-size: 1.5rem;
+.index-2 ul li:hover {
+    background-color: rgba(157, 177, 159, 0.726);
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -258,14 +253,14 @@ footer {
     display: inline-block;
     position: relative;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 25%;
     margin: 0.2%;
     
 
 
 }
 
-.dos nav ul li a {
+.dos ul li a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.5rem;
@@ -273,7 +268,7 @@ footer {
 }
 
 
-.dos nav ul li {
+.dos ul li {
     width: 200px;
     height: 35px;
     text-align: center;
@@ -288,7 +283,7 @@ footer {
 }
 
 
-.dos nav ul li:hover {
+.dos ul li:hover {
     background-color: rgba(157, 177, 159, 0.726);
     font-size: 1rem;
     font-weight: bold;
@@ -562,7 +557,7 @@ footer {
     display: inline-block;
     position: relative;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 25%;
     margin: 0.2%;
     border-style: solid;
 
@@ -860,7 +855,7 @@ footer {
     display: inline-block;
     position: relative;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 25%;
     margin: 0.2%;
     border-style: solid;
 
@@ -956,176 +951,49 @@ footer {
 }
 
 
+
 /*contacto*/
+    
 
-.Contenedor_Contacto {
-    display: grid;
-    height: 100vh;
-    grid-template-rows: 2fr 1fr 2fr 2fr 0.5fr;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "contacto--nav"
-        "contacto-main"
-        "notebook-img"
-        "input-contacto"
-        "footer_contacto";
+    .imagen-contacto img {
+        width: 100%;
+        height: 100%;
+        display: none;
+        
+    }
+    
 
-}
+    .lulas-1 ul li a {
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-left: 20px;
+            
+        }
+          
+        @media (min-width: 767px){
+            .imagen-contacto img {
+                display: inline-block;
+            }
+        }
 
-
-.contacto_img {
-    background-color: rgb(0, 0, 0);
-    grid-area: contacto-logo;
-    display: none;
-
-}
-
-
-.contacto_img header img {
-    background-color: pink;
-}
-
-.contacto__nav {
-    background-color: rgb(0, 0, 0);
-    grid-area: contacto--nav;
-    font-family: 'Jost', sans-serif;
-    font-weight: 100;
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    padding-left: 10px;
-    border: rgb(224, 224, 224) solid;
-
-
-}
-
-.contacto_nav nav ul li a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.contacto_nav nav ul li {
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    list-style-type: none;
-    display: inline-block;
-    color: rgb(80, 95, 82);
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.contacto_nav nav ul li:hover {
-    background-color: rgba(0, 0, 0, 0.726);
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-
-.contacto_main {
-    grid-area: contacto-main;
-    background-color: #050505;
-
-
-}
-
-.contacto_main h1 {
-    color: black;
-    background-color: tan;
-    text-align: center;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: -35px;
-
-}
-
-.contacto_main h2 {
-    background-color: pink;
-    margin-top: 10%;
-    font-size: 0.5fr;
-    text-align: center;
-    font-family: 'Jost', sans-serif;
-}
-
-.contacto_img_notebook {
-    grid-area: notebook-img;
-    background-color: tan;
-}
-
-.contacto_img_notebook img {
-    width: 100vw;
-    height: 70vh;
-    padding: 10px;
-
-}
-
-.input_contacto {
-    background-color: tan;
-    grid-area: input-contacto;
-    list-style-type: none;
-
-
-
-}
-
-.input_contacto label {
-    text-align: center;
-    display: list-item;
-    margin: 2%;
-
-
-}
-
-.input_contacto textarea {
-    text-align: start;
-    text-align: center;
-    margin-left: 5%;
-
-}
-
-.enviar {
-    padding-left: 70%;
-    margin-bottom: 9%;
-}
-
-
-.footer_cont footer p {
-    font-family: 'Jost', sans-serif;
-    background-color: rgb(0, 0, 0);
-    font-size: 1fr;
-    background-color: rgb(0, 0, 0);
-    grid-area: footer_contacto;
-    color: antiquewhite;
-    text-align: center;
-    margin-top: 2px;
-
-}
-
-
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width:600px) {
     .dos {
 
         text-align: justify;
-
-
     }
 
-    nav {
+    .index-2 {
 
         padding-left: 35%;
         padding-right: 20%;
 
     }
 
-    .contacto_main h1 {
-        margin-bottom: -50px;
-
-    }
-
 }
+
+
+/*MEDIA QUERIS*/
 
 @media screen and (min-width:1024px) {
 
@@ -1152,12 +1020,12 @@ footer {
     .dos{
         padding: 1px;
     }
-    .dos nav ul li {
+    .dos ul li {
         width: 195px;
         height: 35px;
     }
 
-    .contenedor {
+    .contenedor-index {
         grid-template-columns: repeat(2, 1fr);
 
         grid-template-areas: "banner banner"
@@ -1168,13 +1036,13 @@ footer {
             "footer footer";
     }
 
-    nav {
+    .index-2 {
         padding: 1px;
 
 
     }
 
-    nav ul li {
+    .index-2 ul li {
         height: 30px;
         width: 195px;
 
@@ -1198,7 +1066,7 @@ footer {
     .cont-1 {
         display: inline-block
     }
-    .cont-2{
+    .cont-2 {
         padding: 1px;
     }
     .cont-2 nav ul li {
@@ -1227,10 +1095,13 @@ footer {
         display: inline-block;
     }
 
+    .cont-arte2{
+        padding: 1px;
+    }
     .cont-arte2 nav ul li {
+        flex-direction: row;
         height: 30px;
-        width: 190px;
-
+        width: 195px;
     }
 
     .cont-arte4 iframe {
@@ -1252,63 +1123,4 @@ footer {
         padding: 3vh 3vh 3vh 3vh;
         padding-top: 20%;
         border: 10px solid;
-    }
-
-    .Contenedor_Contacto {
-
-        grid-template-rows: 2fr 0.3fr 2fr 2fr 0.8fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "contacto-logo contacto-logo"
-            "contacto--nav contacto--nav"
-            "contacto-main contacto-main"
-            "notebook-img input-contacto"
-            "footer_contacto footer_contacto";
-
-    }
-
-    .contacto_img {
-        display: inline-block;
-    }
-
-    .contacto__nav {
-        display: inline-block;
-        height: 50px;
-
-
-    }
-
-
-    .contacto__nav nav ul li {
-        height: 30px;
-        width: 180px;
-
-    }
-    .contacto_main h1 {
-        margin-bottom: 15px;
-    }
-
-    .contacto_main h2 {
-        margin: -1px;
-    }
-
-    .input_contacto {
-
-    padding-top: 20%;
-      
-    }
-    .input_contacto form {
-        background-color: pink;
-        
-      
-    }
-            
-    .contacto_img_notebook img {
-        background-color: tan;
-        width: 60vw;
-        height: 70vh;
-        padding: 10px;
-        
-    
-    }
-    
     }
