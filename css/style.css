@@ -8,7 +8,7 @@ body {
     background-color: #050505;
 }
 
-.contenedor-index {
+.cont-index {
     display: grid;
     height: 100vh;
 
@@ -45,37 +45,15 @@ body {
 .index-2 {
     background-color: black;
     grid-area: nav;
-    font-family: 'Jost', sans-serif;
-    font-weight: 800;
-    display: inline-block;
-    position: relative;
-    padding-left: 25%;
-    margin: 0.2%;
-
-
 }
 
 .index-2 ul li a {
-    text-decoration: none;
+
     color: whitesmoke;
     font-size: 1.5rem;
-    text-align: center;
-}
-
-
-.index-2 ul li {
-    width: 200px;
-    height: 35px;
-    text-align: center;
-    list-style-type: none;
-    width: 200px;
-    height: 30px;
-    display: inline-block;
-    color: rgb(80, 95, 82);
-    flex-direction: column;
-    justify-content: center;
 
 }
+
 
 
 .index-2 ul li:hover {
@@ -83,6 +61,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
 }
+
 
 .main-11 {
     background-color: #1f3629;
@@ -230,6 +209,7 @@ footer {
         "footer-1";
     row-gap: 0.8%;
 
+
 }
 
 .uno {
@@ -248,39 +228,16 @@ footer {
 
     background-color: black;
     grid-area: nav-1;
-    font-family: 'Jost', sans-serif;
-    font-weight: 800;
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    padding-left: 25%;
-    margin: 0.2%;
-
-
-
+    border: solid black;
 }
 
 .dos ul li a {
-    text-decoration: none;
+
     color: whitesmoke;
     font-size: 1.5rem;
-    text-align: center;
-}
-
-
-.dos ul li {
-    width: 200px;
-    height: 35px;
-    text-align: center;
-    list-style-type: none;
-    width: 200px;
-    height: 30px;
-    display: inline-block;
-    color: rgb(80, 95, 82);
-    flex-direction: column;
-    justify-content: center;
 
 }
+
 
 
 .dos ul li:hover {
@@ -289,18 +246,24 @@ footer {
     font-weight: bold;
 }
 
+
 .tres {
     background-color: #1f3629;
     grid-area: titulo-1;
+    border: solid black;
 }
 
 .tres h1 {
+    font-weight: 800;
+    background-color: peru;
     padding-left: 3%;
     margin: 1px;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     font-family: 'Jost', sans-serif;
-    ;
     text-align: center;
+    animation-name: animate__animated animate__fadeInLeftBig;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 
 }
 
@@ -534,6 +497,7 @@ footer {
         "cafe"
         "pie-receta";
 
+
 }
 
 .cont-1 {
@@ -551,61 +515,37 @@ footer {
 .cont-2 {
     background-color: black;
     grid-area: nav-receta;
-
-    font-family: 'Jost', sans-serif;
-    font-weight: 800;
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    padding-left: 25%;
-    margin: 0.2%;
-    border-style: solid;
-
+    border: solid black;
 }
 
-.cont-2 nav ul li a {
-    text-decoration: none;
+.cont-2 ul li a {
     color: whitesmoke;
     font-size: 1.5rem;
-    text-align: center;
 }
 
-.cont-2 nav ul li {
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    list-style-type: none;
-    display: inline-block;
-    color: rgb(80, 95, 82);
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.cont-2 nav ul li:hover {
+.cont-2 ul li:hover {
     background-color: rgba(157, 177, 159, 0.726);
     font-size: 1rem;
     font-weight: bold;
 }
 
 
-
-
-
 .cont-3 {
-    background-color: peru;
-    grid-area: main-receta;
-    display: none;
-
+        grid-area: main-receta;
+    
 }
 
 .cont-3 h1 {
-    padding-left: 3%;
-    margin: 1px;
-    text-align: center;
-    text-decoration: underline 1px;
     font-weight: 800;
-    font-size: x-large;
+        background-color: peru;
+        padding-left: 3%;
+        margin: 1px;
+        color: rgb(0, 0, 0);
+        font-family: 'Jost', sans-serif;
+        text-align: center;
+        animation-name: animate__animated animate__fadeInLeftBig;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
 }
 
 .cont-4 {
@@ -829,13 +769,13 @@ footer {
     display: grid;
     height: 100vh;
 
-    grid-template-rows: 3fr 0.5fr 0.5fr 4fr 3fr 1fr 0.5fr;
+    grid-template-rows: 3fr 0.5fr 0.5fr 3fr 4fr 3fr 0.5fr;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "artebanner"
         "artenav"
         "artetitulo"
+        "carousel"
         "artevideo"
-        "arteimagen"
         "artetexto"
         "artefooter";
 
@@ -852,39 +792,19 @@ footer {
     grid-area: artenav;
     font-family: 'Jost', sans-serif;
     font-weight: 800;
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    padding-left: 25%;
-    margin: 0.2%;
-    border-style: solid;
-
-}
-
-.cont-arte2 nav ul li a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.cont-arte2 nav ul li {
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    list-style-type: none;
-    display: inline-block;
-    color: rgb(80, 95, 82);
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.cont-arte2 nav ul li:hover {
-    background-color: rgba(0, 0, 0, 0.726);
-    font-size: 1rem;
-    font-weight: bold;
-}
+    border: solid black;
+    }
+    
+    .cont-arte2 ul li a {
+        color: whitesmoke;
+        font-size: 1.5rem;
+    }
+    
+    .cont-arte2 ul li:hover {
+        background-color: rgba(157, 177, 159, 0.726);
+        font-size: 1rem;
+        font-weight: bold;
+    }
 
 
 .cont-arte3 {
@@ -893,14 +813,26 @@ footer {
 }
 
 .cont-arte3 h1 {
+    font-weight: 800;
+    background-color: peru;
     padding-left: 3%;
     margin: 1px;
+    color: rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
     text-align: center;
-    font-size: xx-large;
-
+    animation-name: animate__animated animate__fadeInLeftBig;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
+.carousel{
+    grid-area: carousel;
+}
 
+.cont-arteimg{
+    grid-area: cont-arteimg;
+    display: none;
+}
 
 .cont-arte4 {
     background-color: rgb(210, 211, 216);
@@ -908,19 +840,6 @@ footer {
 }
 
 .cont-arte4 iframe {
-    width: 100%;
-    margin-bottom: 20px;
-
-}
-
-.cont-arte5 {
-    background-color: rgb(212, 213, 218);
-    grid-area: arteimagen;
-    display: none;
-}
-
-.cont-arte5 img {
-    height: 100%;
     width: 100%;
 
 }
@@ -938,6 +857,11 @@ footer {
     font-weight: 800;
     color: antiquewhite;
     text-align: center;
+}
+
+.cont-arte7{
+    grid-area: carrusel;
+
 }
 
 
@@ -971,6 +895,8 @@ footer {
 
 }
 
+/*MEDIA QUERIS*/
+
 @media (min-width: 767px) {
     .imagen-contacto img {
         display: inline-block;
@@ -982,18 +908,11 @@ footer {
 
         text-align: justify;
     }
-
-    .index-2 {
-
-        padding-left: 35%;
-        padding-right: 20%;
-
+    .cont-1{
+        display: inline
     }
-
 }
 
-
-/*MEDIA QUERIS*/
 
 @media screen and (min-width:1024px) {
 
@@ -1021,12 +940,9 @@ footer {
         padding: 1px;
     }
 
-    .dos ul li {
-        width: 195px;
-        height: 35px;
-    }
 
-    .contenedor-index {
+
+    .cont-index {
         grid-template-columns: repeat(2, 1fr);
 
         grid-template-areas: "banner banner"
@@ -1037,17 +953,14 @@ footer {
             "footer footer";
     }
 
-    .index-2 {
-        padding: 1px;
-
-
-    }
-
-    .index-2 ul li {
-        height: 30px;
-        width: 195px;
+    .index-2 ul li a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-left: 20px;
 
     }
+
 
     .Contenedor_recetas {
 
@@ -1065,22 +978,13 @@ footer {
     }
 
     .cont-1 {
-        display: inline-block
+        display: inline-block;
     }
 
     .cont-2 {
         padding: 1px;
     }
 
-    .cont-2 nav ul li {
-        flex-direction: row;
-        height: 30px;
-        width: 195px;
-    }
-
-    .cont-3 {
-        display: inline-block;
-    }
 
     .Contenedor_artelatte {
 
@@ -1088,8 +992,8 @@ footer {
         grid-template-areas: "artebanner artebanner"
             "artenav artenav"
             "artetitulo artetitulo"
-            "artevideo artevideo"
-            "arteimagen artetexto"
+            "carousel carousel"
+            "artetexto artevideo"
             "artefooter artefooter";
 
     }
@@ -1108,6 +1012,11 @@ footer {
         width: 195px;
     }
 
+    .carousel{
+        width: 100%;
+        justify-items: center;
+    }
+
     .cont-arte4 iframe {
         padding-right: 3vh;
         padding-left: 3vh;
@@ -1115,13 +1024,6 @@ footer {
 
     }
 
-    .cont-arte5 {
-        display: flex;
-
-        justify-content: center;
-
-
-    }
 
     .cont-arte6 {
         padding: 3vh 3vh 3vh 3vh;
