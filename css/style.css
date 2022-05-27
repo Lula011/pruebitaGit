@@ -69,15 +69,16 @@ body {
 }
 
 .main-11 h1 {
+    background-color: peru;
     font-family: 'Jost', sans-serif;
-    color: rgb(212, 199, 81);
+    color: black;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 800;
     margin: 5px;
     padding: 5px;
     animation-name: animate__animated animate__fadeInLeftBig;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 
 
@@ -101,6 +102,7 @@ body {
     font-family: 'Jost', sans-serif;
     font-weight: 800;
     color: antiquewhite;
+    padding-top: 5%;
 
 }
 
@@ -138,7 +140,7 @@ body {
 
 .p1 {
     text-align: center;
-    padding-top: 15%;
+    padding-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -148,7 +150,7 @@ body {
     padding-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 
@@ -169,9 +171,8 @@ footer {
     grid-area: footer;
     background-color: rgb(0, 0, 0);
     box-shadow: rgb(0, 0, 0) 5px 5px 8px 12px;
-    margin-top: 5px;
     font-weight: 800;
-
+    margin-top: 3px;
 }
 
 #lula {
@@ -480,7 +481,7 @@ footer {
     display: grid;
     height: 100vh;
 
-    grid-template-rows: 3fr 0.5fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
+    grid-template-rows: 3fr 0.5fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "banner-receta"
         "nav-receta"
@@ -491,12 +492,9 @@ footer {
         "cappu"
         "expresso-m"
         "lungo"
-        "doble"
         "expresso"
         "ristretto"
-        "cafe"
         "pie-receta";
-
 
 }
 
@@ -531,21 +529,21 @@ footer {
 
 
 .cont-3 {
-        grid-area: main-receta;
-    
+    grid-area: main-receta;
+
 }
 
 .cont-3 h1 {
     font-weight: 800;
-        background-color: peru;
-        padding-left: 3%;
-        margin: 1px;
-        color: rgb(0, 0, 0);
-        font-family: 'Jost', sans-serif;
-        text-align: center;
-        animation-name: animate__animated animate__fadeInLeftBig;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
+    background-color: peru;
+    padding-left: 3%;
+    margin: 1px;
+    color: rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    animation-name: animate__animated animate__fadeInLeftBig;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .cont-4 {
@@ -670,7 +668,7 @@ footer {
 
 .cont-10 {
     background-color: peru;
-    grid-area: doble;
+    grid-area: expresso;
 }
 
 .cont-10 img {
@@ -690,7 +688,7 @@ footer {
 
 .cont-11 {
     background-color: peru;
-    grid-area: expresso;
+    grid-area: ristretto;
 }
 
 .cont-11 img {
@@ -708,45 +706,7 @@ footer {
     text-align: center;
 }
 
-.cont-12 {
-    background-color: peru;
-    grid-area: ristretto;
-}
 
-.cont-12 img {
-    width: 100%;
-    height: 100%;
-}
-
-.cont-12 p {
-    padding: 5%;
-    margin: 1%;
-    font-size: medium;
-    font-family: 'Jost', sans-serif;
-    font-weight: 800;
-    color: antiquewhite;
-    text-align: center;
-}
-
-.cont-13 {
-    background-color: peru;
-    grid-area: cafe;
-}
-
-.cont-13 img {
-    width: 100%;
-    height: 100%;
-}
-
-.cont-13 p {
-    padding: 5%;
-    margin: 1%;
-    font-size: medium;
-    font-family: 'Jost', sans-serif;
-    font-weight: 800;
-    color: antiquewhite;
-    text-align: center;
-}
 
 .cont-14 {
     background-color: peru;
@@ -769,7 +729,7 @@ footer {
     display: grid;
     height: 100vh;
 
-    grid-template-rows: 3fr 0.5fr 0.5fr 3fr 4fr 3fr 0.5fr;
+    grid-template-rows: 3fr 0.5fr 0.5fr 3fr 4fr 3fr 1fr 0.5fr;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "artebanner"
         "artenav"
@@ -777,6 +737,7 @@ footer {
         "carousel"
         "artevideo"
         "artetexto"
+        "arteparrafo"
         "artefooter";
 
 }
@@ -793,18 +754,18 @@ footer {
     font-family: 'Jost', sans-serif;
     font-weight: 800;
     border: solid black;
-    }
-    
-    .cont-arte2 ul li a {
-        color: whitesmoke;
-        font-size: 1.5rem;
-    }
-    
-    .cont-arte2 ul li:hover {
-        background-color: rgba(157, 177, 159, 0.726);
-        font-size: 1rem;
-        font-weight: bold;
-    }
+}
+
+.cont-arte2 ul li a {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.cont-arte2 ul li:hover {
+    background-color: rgba(157, 177, 159, 0.726);
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 
 .cont-arte3 {
@@ -825,11 +786,12 @@ footer {
     animation-iteration-count: infinite;
 }
 
-.carousel{
+.carousel {
     grid-area: carousel;
+
 }
 
-.cont-arteimg{
+.cont-arteimg {
     grid-area: cont-arteimg;
     display: none;
 }
@@ -859,9 +821,14 @@ footer {
     text-align: center;
 }
 
-.cont-arte7{
+.cont-arte7 {
     grid-area: carrusel;
 
+}
+
+.arteparrafo {
+    grid-area: arteparrafo;
+    display: none;
 }
 
 
@@ -908,7 +875,8 @@ footer {
 
         text-align: justify;
     }
-    .cont-1{
+
+    .cont-1 {
         display: inline
     }
 }
@@ -971,8 +939,7 @@ footer {
             "flatwhite latte"
             "americano cappu"
             "expresso-m lungo"
-            "doble expresso"
-            "ristretto cafe"
+            "expresso ristretto"
             "pie-receta pie-receta";
         gap: 1%;
     }
@@ -994,7 +961,9 @@ footer {
             "artetitulo artetitulo"
             "carousel carousel"
             "artetexto artevideo"
+            "artetexto arteparrafo"
             "artefooter artefooter";
+
 
     }
 
@@ -1012,22 +981,33 @@ footer {
         width: 195px;
     }
 
-    .carousel{
+    .carousel {
         width: 100%;
         justify-items: center;
+        padding-top: 5%;
+        margin-bottom: -60px;
+
     }
 
     .cont-arte4 iframe {
-        padding-right: 3vh;
-        padding-left: 3vh;
-        border: 20px black solid;
+        border: 10px black solid;
 
     }
 
 
     .cont-arte6 {
         padding: 3vh 3vh 3vh 3vh;
-        padding-top: 20%;
-        border: 10px solid;
+        border: 5px solid;
+    }
+
+    .arteparrafo {
+        display: inline;
+        text-align: center;
+        font-family: 'Jost', sans-serif;
+        ;
+        font-size: large;
+        color: white;
+        padding-top: 3px;
+        margin-top: 3px;
     }
 }
